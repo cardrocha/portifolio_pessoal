@@ -1,0 +1,138 @@
+/*Tablet*/
+@media (min-width: 768px) {
+
+  /* Menu */
+
+  /*title*/
+
+  /*Skills*/
+
+  /*Hobbies*/
+
+  /*Experiências acadêmicas*/
+
+  /*Expeirência profissional*/
+
+}
+
+/*Mobile*/
+@media (max-width: 375px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  /*Menu*/
+  section.menu {
+    flex-direction: column;
+    align-items: center;
+    white-space: nowrap;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 100px;
+    gap: 0;
+    margin-bottom: 20px;
+  }
+
+  .menu__list {
+    flex-direction: column;
+    gap: 14px;
+    align-items: center;
+  }
+
+  /*Titulo*/
+  .title__div__container {
+    flex-direction: column;
+  }
+
+  .title__profile {
+    margin-right: 30px;
+  }
+
+  .title__network{
+    align-items: center;
+    margin-right: 30px;
+  }
+  /*Sessão sobre*/
+
+  section.about {
+    max-width: 375px;
+    width: 100%;
+  }
+
+  .about__container {
+    width: 375px;
+    padding: 20px;
+  }
+
+  .about__paragraph {
+    margin-right: 30px;
+  }
+
+  /*Skills*/
+
+  section.skills {
+    max-width: 375px;
+    width: 100%;
+  }
+
+  .skills__line {
+    flex-direction: column;
+    gap: 50px;
+  }
+  /*Hobbies*/
+
+  section.hobbies {
+    max-width: 375px;
+    width: 100%;
+  }
+
+  .hobbies__line {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 40px;
+  }
+  /*Formação Acadêmica*/
+
+  .academic__courses {
+    flex-direction: column;
+  }
+
+  /*Experiência Profissional*/
+
+  .experiencie__box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .experience__img {
+    width: 200%;
+  }
+
+  /*Contato*/
+
+  .formcontato__contacto {
+    flex-direction: column;
+    width: 99%;
+    /* border: 1px solid var(--cor-de-link); */
+  }
+
+  .formcontato__img {
+    width: 100%;
+    border-right: 3px solid #000;
+  }
+
+  .formcontato__text {
+    width: 90%;
+    padding-left: 15px;
+  }
+
+  .formcontato__form {
+    width: 87%;
+    margin-left: -16px;
+  }
+  /*Footer*/
+
+}

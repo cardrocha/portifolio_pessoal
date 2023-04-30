@@ -7,6 +7,15 @@ coloque nas sessões indicadas*/
   /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
   --cor-de-fundo: #ded6d6;
   --cor-de-link: #000;
+  --cor-de-letra: #fff;
+  --cor-do-icone: #006aff;
+  --skill-box-fundo: #e6e5e5;
+  --skill-box-border: #aeacac;
+  --btn-repo-fundo: #001b40;
+  --btn-repo-hover: #03367d;
+  --btn-demo-fundo: #006aff;
+  --btn-demo-hover: #2d83fc;
+  overflow-x: hidden;
 }
 
 body {
@@ -51,8 +60,8 @@ section.menu {
   max-width: 1360px;
   width: 100%;
   margin: 0 auto;
-  background-color: #000;
-  color: #fff;
+  background-color: var(--cor-de-link);
+  color: var(--cor-de-letra);
   transition: all ease .5s;
 }
 
@@ -68,11 +77,11 @@ header {
   margin-left: 100px;
 }
 .menu__title__contato {
-  color: #fff;
+  color: var(--cor-de-letra);
 }
 
 section.menu:hover .menu__title__contato {
-  color: #000;
+  color: var(--cor-de-link);
 }
 
 .menu__list {
@@ -83,22 +92,22 @@ section.menu:hover .menu__title__contato {
   font-size: 16px;
   font-weight: bold;
   margin-right: 20px;
-  color: #fff;
+  color: var(--cor-de-letra);
 }
 
 section.menu:hover {
-  background-color: #fff;
-  color: #000;
+  background-color: var(--cor-de-letra);
+  color: var(--cor-de-link);
 }
 
 .menu__list li :hover {
-  background-color: #fff;
-  color: #000;
+  background-color: var(--cor-de-letra);
+  color: var(--cor-de-link);
   text-shadow: 3px 3px 3px;
 }
 
 section.menu:hover .menu__list a {
-  color: #000;
+  color: var(--cor-de-link);
 }
 
 /*Sessão Title*/
@@ -119,7 +128,7 @@ section.title {
 .title__profile {
   width: 300px;
   border-radius: 500px;
-  border: 2px solid #000;
+  border: 2px solid var(--cor-de-link);
   margin-top: 100px;
   margin-bottom: 50px;
 }
@@ -138,7 +147,6 @@ section.title {
 .title__network__item:hover {
   transform: scale(1.5);
 }
-
 
 /*Sessão About*/
 
@@ -177,7 +185,7 @@ section.skills {
 
 .icon__CSS {
   font-size: 35px;
-  color: #006aff;
+  color: var(--cor-do-icone);
 }
 
 .skills__line {
@@ -188,9 +196,9 @@ section.skills {
 }
 
 .skills__box {
-  border: 1px solid #aeacac;
+  border: 1px solid var(--skill-box-border);
   border-radius: 50px;
-  background-color: #e6e5e5;
+  background-color: var(--skill-box-fundo);
 }
 
 .skills__box ul {
@@ -293,27 +301,37 @@ section.experience {
 
 .experiencia__botao--repo {
   padding: 10px 30px 10px 30px;
-  background-color: #001b40;
-  color: #fff;
+  background-color: var(--btn-repo-fundo);
+  color: var(--cor-de-letra);
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  transition: all ease .2s;
+}
+
+.experiencia__botao--repo:hover {
+  background-color: var(--btn-repo-hover);
+}
+
+.experiencia__botao--demo {
+  padding: 10px 40px 10px 40px;
+  background-color: var(--btn-demo-fundo);
   font-size: 18px;
   border: none;
   cursor: pointer;
 }
 
-.experiencia__botao--demo {
-  padding: 10px 40px 10px 40px;
-  background-color: #006aff;
-  font-size: 18px;
-  border: none;
-  cursor: pointer;
+.experiencia__botao--demo:hover {
+  background-color: var(--btn-demo-hover)
 }
+
 /*Contato*/
 
 section.formcontato {
   max-width: 1360px;
   width: 100%;
   margin: 0 auto;
-  border: 2px solid #000;
+  border: 2px solid var(--cor-de-link);
 }
 
 .formcontato__title {
@@ -328,7 +346,7 @@ section.formcontato {
 }
 
 .formcontato--esquerda {
-  border: 1px solid #000;
+  border: 1px solid var(--cor-de-link);
 }
 
 .formcontato__img {
@@ -339,8 +357,8 @@ section.formcontato {
   display: flex;
   flex-direction: column;
   padding: 40px;
-  border: 2px solid #000;
-  background-color: #aeacac;
+  border: 2px solid var(--cor-de-link);
+  background-color: var(--skill-box-border);
 }
 
 .formcontato__input {
@@ -351,9 +369,9 @@ section.formcontato {
 .formcontato__botao {
   width: 50%;
   padding: 10px;
-  background-color: #001b40;
+  background-color: var(--btn-repo-fundo);
   border: none;
-  color: #fff;
+  color: var(--cor-de-letra);
   font-size: 18px;
   margin-top: 10px;
   cursor: pointer;
@@ -362,50 +380,7 @@ section.formcontato {
 /*footeer*/
 
 section.footer {
-  background-color: #000;
-  color: #fff;
+  background-color: var(--cor-de-link);
+  color: var(--cor-de-letra);
   padding: 10px;
-}
-
-/* Chegou a hora de se desafiar com a responsividade, 
-utilize como referência os breakpoints @media abaixo*/
-
-/*Tablet*/
-@media (min-width: 768px) {
-
-  /* Menu */
-
-  /*title*/
-
-  /*Skills*/
-
-  /*Hobbies*/
-
-  /*Experiências acadêmicas*/
-
-  /*Expeirência profissional*/
-
-}
-
-/*Mobile*/
-@media (min-width: 425px) {
-
-  /*Menu*/
-
-  /*Titulo*/
-
-  /*Sessão sobre*/
-
-  /*Skills*/
-
-  /*Hobbies*/
-
-  /*Formação Acadêmica*/
-
-  /*Experiência Profissional*/
-
-  /*Contato*/
-
-  /*Footer*/
-
 }
