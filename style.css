@@ -189,9 +189,10 @@ section.skills {
 }
 
 .skills__line {
-  display: flex;
+  display: grid;
+  grid-template-columns: 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
+  gap: 10px;
   align-items: center;
-  justify-content: space-around;
   font-size: 30px;
 }
 
@@ -199,6 +200,7 @@ section.skills {
   border: 1px solid var(--skill-box-border);
   border-radius: 50px;
   background-color: var(--skill-box-fundo);
+  white-space: nowrap;
 }
 
 .skills__box ul {
